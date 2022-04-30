@@ -12,6 +12,18 @@ public class EXAMENFINAL {
         
     
     int opcion;
+    int numa,numb; //variables del primer problema
+    int num;
+    
+    
+    
+                System.out.println("        FINAL - 202106208         "); 
+                System.out.println("1. COMPARAR DOS NUMEROS");
+                System.out.println("2. PIRAMIDE DE NUMEROS IMPARES");
+                System.out.println("3. Salir");
+                System.out.println("\n");  
+    
+    
     
     System.out.println("Escoja una opción: ");
     opcion = entrada.nextInt();
@@ -19,16 +31,71 @@ public class EXAMENFINAL {
     
     switch(opcion)
     {
-        case 0:
-        System.out.print("#");           
-        break;
-                    
+        
+        //Problema 1
         case 1:
-        System.out.print("$");
-                            
+        System.out.println("COMPARAR DOS NUMEROS");
+        
+            System.out.println("Ingrese numero 1: ");
+            numa= entrada.nextInt();
+            
+            System.out.println("Ingrese numero 2: ");
+            numb= entrada.nextInt();
+        
+        
+        if(numa>numb)
+        {
+            System.out.println("El numero mayor es: "+numa);
+        }
+        
+        if(numb>numa)
+        {
+            System.out.println("El numero mayor es: "+numb);
+        }
+        
+        break;
+          
+        
+        
+        
+        
+        
+        
+        case 2:
+        System.out.println("PIRAMIDE DE NUMEROS IMPARES");
+        
+        System.out.println ("Introduzca numero de filas: ");
+        num= entrada.nextInt();
+        
+        if(num% 2 == 0)
+        {
+            System.out.println("Su numero no es impar");    
+        }
+        else
+        {
+  
+        System.out.println();
+        for(int a = 1; a<=((num/2)+1); a++){
+            for(int b = 1; b<=(num)-a; b++){
+                System.out.print(" ");
+            }
+ 
+            //Asteriscos
+            for(int asteriscos=1; asteriscos<=(a*2)-1; asteriscos++){
+                System.out.print("*");
+            }
+            System.out.println();
+            
+        }
+        }
+        
+        
+        
+        
+        
         break;
                         
-        case 2:
+        case 3:
         System.out.print("@");                            
         break;
     
