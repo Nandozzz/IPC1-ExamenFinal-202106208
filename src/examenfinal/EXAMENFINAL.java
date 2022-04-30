@@ -25,7 +25,7 @@ public class EXAMENFINAL {
     
     
     
-    System.out.println("Escoja una opción: ");
+    System.out.println("Escoja una opcion: ");
     opcion = entrada.nextInt();
     
     
@@ -60,7 +60,7 @@ public class EXAMENFINAL {
         
         
         
-        
+        //Problema 2
         case 2:
         System.out.println("PIRAMIDE DE NUMEROS IMPARES");
         
@@ -89,14 +89,25 @@ public class EXAMENFINAL {
         }
         }
         
-        
-        
-        
-        
         break;
-                        
+         
+        
+        
+        
+        
         case 3:
-        System.out.print("@");                            
+        System.out.print("PRODUCCION LECHE ");
+        
+
+        int peso[]={400,360,250,180,90,50};
+        
+        int pesoa[]={100,150,155,200,200,223,243,300};
+        int leche[]={1,28,29,31,30,34,45,50};
+        
+        
+        
+        
+        
         break;
     
     }
